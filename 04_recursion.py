@@ -74,4 +74,13 @@ def recur_fib(n):
     return recur_fib(n-1)+recur_fib(n-2)
 
 
-print(recur_fib(6))
+#print(recur_fib(6))
+
+
+def factorial(n):
+    if n ==0:
+        return 1
+    if n >0:
+        return n*factorial(n-1)
+    
+print(factorial(4))
