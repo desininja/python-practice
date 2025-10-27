@@ -39,3 +39,31 @@ you should choose lambda function when you need a small, single-expression funct
 - You need multi-line logic.
 - You need a docstring
 - The logic is complex or reusable
+
+
+## Getter and Setter in Python
+
+In Python, a getter and setter are methods used to access and update the attributes of a class. These methods provide a way to define controlled access to the attributes of an object, there by ensuring the integrity of the data. 
+
+    - Getter: The getter method is used to retrieve the value of a private attribute, It allows controlled access to the attribute. 
+    - Setter: The setter method is used to set or modify the value of a private attribute. It allows you to control how the value is updated, enabling validation or modification of the data before it's actually assigned. 
+
+    @property for getter 
+    @<function_name>.setter
+
+    getter and setter should have same name if it is defined for a function. 
+
+
+    # Class method, Static Method and Instance Method
+
+    Three important types of methods in python.
+
+    Class method in python:
+    Class methods are associated with the class rather than instances, they are defined using the @classmethod decorator and take the class itself as teh first parameter, usually names cls. Class methods are useful for tasks that involve the class rather than the instance, such as creating class-specific behaviors or modifying class-level attributes.
+
+    Static Method in Python
+Static methods, as the name suggests, are not bound to either the class or its instances. They are defined using the @staticmethod decorator and do not take a reference to the instance or the class as their first parameter. Static methods are essentially regular functions within the class namespace and are useful for tasks that do not depend on instance-specific or class-specific data.
+
+
+Instance Method in Python
+Instance methods are the most common type of methods in Python classes. They are associated with instances of a class and operate on the instance's data. When defining an instance method, the method's first parameter is typically named self, which refers to the instance calling the method. This allows the method to access and manipulate the instance's attributes.
